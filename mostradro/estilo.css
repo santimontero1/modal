@@ -1,0 +1,130 @@
+.contenedor{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.contenedor_fotos{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+.contenedor_fotos img:hover{
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+}
+.contenedor_fotos img{
+    width: 50px;
+    height: 50px;
+}
+.contenedor_foto img{
+    width: 200px;
+    height: 300px;
+}
+.contenedor_foto{
+    width: 60%;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.boton{
+    display: flex;
+    align-items: center;
+}
+
+/*   */ 
+
+
+.boton_abrir{
+    display: inline;
+    padding: 7px 0;
+    width: 100px;
+    border: 1px solid beige;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.modal_full_contenedor{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal_full{
+    width: 40%;
+    height: 50%;
+    background-color: rgb(20, 212, 107);
+    /* overflow: hidden; */
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    position: relative;
+    transition: transform 2s;
+    transform: translateY(0%);
+    border-radius: 10px;
+}
+.cerrar_full{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: sienna;
+    cursor: pointer;
+    line-height: 25px;
+    border-radius: 50%;
+}
+.modal_cerrar {
+    transform: translateY(-200%);
+}
+
+.boton_derecha{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: sienna;
+    cursor: pointer;
+    line-height: 25px;
+    border-radius: 50%;
+}
+
+.boton_izquierda{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: sienna;
+    cursor: pointer;
+    line-height: 25px;
+    border-radius: 50%;
+}
+.contenedor_modal img{
+    width: 300px;
+    height: 300px;
+}
+.contenedor_modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
